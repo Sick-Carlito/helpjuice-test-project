@@ -8035,3 +8035,127 @@ MONGODB | localhost:27017 | helpjuice_development.find | SUCCEEDED | 0.000511139
 Completed 200 OK in 21ms (Views: 18.5ms)
 
 
+Started GET "/" for ::1 at 2022-07-05 18:33:37 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:6 | helpjuice_development.find | SUCCEEDED | 0.002s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2033ms (Views: 1994.2ms)
+
+
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone'.
+MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/articles/search" for ::1 at 2022-07-05 18:33:57 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"5rN119NeVDVe+HFS3OD7E4IoPJsAGkvcUMohQOl02O8EasGH5b1nh7J20yf8+Fci1eDpuVF25pKGdTPNW2w/mQ==", "search_field"=>"ddd"}
+MONGODB | localhost:27017 req:8 conn:1:1 sconn:11 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('62c459e53ea7d3863923f4aa'), "query"=>"ddd"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:8 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms
+
+
+Started GET "/" for ::1 at 2022-07-05 18:33:57 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:9 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:9 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 23ms (Views: 19.4ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-07-05 18:34:04 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"IqJt7IwMJmJNyHyRacBID121pobauqFGL90wD+aQpzbAe9m8uu8V0KFG3uRJ2OQ+Cn1zpIvWDAj5YiKCVIhAQA==", "search_field"=>"ddd"}
+MONGODB | localhost:27017 req:11 conn:1:1 sconn:11 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('62c459ec3ea7d3863923f4ab'), "query"=>"ddd"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:11 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms
+
+
+Started GET "/" for ::1 at 2022-07-05 18:34:04 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:12 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:12 | helpjuice_development.find | SUCCEEDED | 0.000s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 17.4ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-07-05 18:34:07 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"vX28y9x5U3RRRC6rwimLn90pQ4R3KdZAEbse+Ks7qjlfpAib6ppgxr3KjN7iMSeuiuGWpiZFew7HBAx1GSNNTw==", "search_field"=>"ddd"}
+MONGODB | localhost:27017 req:13 conn:1:1 sconn:11 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('62c459ef3ea7d3863923f4ac'), "query"=>"ddd"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:13 | helpjuice_development.insert | SUCCEEDED | 0.000s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for ::1 at 2022-07-05 18:34:07 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:14 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:14 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 22.4ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-07-05 18:34:10 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"/8JMucW+p+oH4UWHrMCrol6iV8Xsb1HyWCYtkX9v+L0dG/jp812UWOtv5/KM2AeTCWqC570D/LyOmT8czXcfyw==", "search_field"=>"dd"}
+MONGODB | localhost:27017 req:16 conn:1:1 sconn:11 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('62c459f23ea7d3863923f4ad'), "query"=>"dd"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:16 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for ::1 at 2022-07-05 18:34:10 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:17 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:17 | helpjuice_development.find | SUCCEEDED | 0.000s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 23.6ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-07-05 18:34:13 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"XEc7z69IV2KRNCZwae7OvF2t4Xncp0Xf/V4jBQxa8yO+no+fmatk0H26hAVJ9mKNCmU0W43L6JEr4TGIvkIUVQ==", "search_field"=>"dd"}
+MONGODB | localhost:27017 req:18 conn:1:1 sconn:11 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('62c459f53ea7d3863923f4ae'), "query"=>"dd"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:18 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for ::1 at 2022-07-05 18:34:13 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:19 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:19 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 28ms (Views: 23.7ms)
+
+
+Started GET "/knowledgebase/clear" for ::1 at 2022-07-05 18:34:16 +0300
+Processing by KnowledgebasesController#clear as HTML
+MONGODB | localhost:27017 req:20 conn:1:1 sconn:11 | helpjuice_development.delete | STARTED | {"delete"=>"knowledge_bases", "ordered"=>true, "deletes"=>[{"q"=>{}, "limit"=>0}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:20 | helpjuice_development.delete | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 13ms
+
+
+Started GET "/" for ::1 at 2022-07-05 18:34:16 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:21 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x47060568970580 type=uuid data=0xa9c695af503d48b7...>}}
+MONGODB | localhost:27017 req:21 | helpjuice_development.find | SUCCEEDED | 0.000s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 69ms (Views: 35.3ms)
+
+
