@@ -7947,3 +7947,91 @@ MONGODB | localhost:27017 | helpjuice_development.find | SUCCEEDED | 0.000541015
 Completed 200 OK in 23ms (Views: 21.2ms)
 
 
+Started POST "/articles/search" for 127.0.0.1 at 2022-07-05 17:10:35 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"Blz0/j434/4BXZ+KZR114u4s9y43JVXXHjdw5LrfzaLkhUCuCNTQTO3TPf9FBdnTueQiDGZJ+JnIiGJpCMcq1A==", "search_field"=>"11"}
+MONGODB | localhost:27017 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "documents"=>[{"_id"=>BSON::ObjectId('62c4465b3ea7d352d8093c8a'), "query"=>"11"}], "ordered"=>true}
+MONGODB | localhost:27017 | helpjuice_development.insert | SUCCEEDED | 0.001263241s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-05 17:10:35 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}}
+MONGODB | localhost:27017 | helpjuice_development.find | SUCCEEDED | 0.0005310139999999999s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 48.2ms)
+
+
+Started POST "/articles/search" for 127.0.0.1 at 2022-07-05 17:10:41 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"ijx5QfHYCKDu8+kfxxWlKevQcCnTJnUe9WRauacaaWto5c0Rxzs7EgJ9S2rnDQkYvBilC4JK2FAj20g0FQKOHQ==", "search_field"=>"333"}
+MONGODB | localhost:27017 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "documents"=>[{"_id"=>BSON::ObjectId('62c446613ea7d352d8093c8b'), "query"=>"333"}], "ordered"=>true}
+MONGODB | localhost:27017 | helpjuice_development.insert | SUCCEEDED | 0.0005265010000000001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-05 17:10:41 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}}
+MONGODB | localhost:27017 | helpjuice_development.find | SUCCEEDED | 0.001753717s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 25ms (Views: 20.6ms)
+
+
+Started GET "/knowledgebase/clear" for 127.0.0.1 at 2022-07-05 17:10:44 +0300
+Processing by KnowledgebasesController#clear as HTML
+MONGODB | localhost:27017 | helpjuice_development.delete | STARTED | {"delete"=>"knowledge_bases", "deletes"=>[{"q"=>{}, "limit"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | helpjuice_development.delete | SUCCEEDED | 0.000997982s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-05 17:10:44 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}}
+MONGODB | localhost:27017 | helpjuice_development.find | SUCCEEDED | 0.000574844s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 20.9ms)
+
+
+Started POST "/articles/search" for 127.0.0.1 at 2022-07-05 17:10:54 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"TE2LOjM6uUSpOZlvGGGrHT3pHQjt7yMmN+SVdlR6ThuulD9qBdmK9kW3Oxo4eQcsaiHIKryDjmjhW4f75mKpbQ==", "search_field"=>"vv"}
+MONGODB | localhost:27017 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "documents"=>[{"_id"=>BSON::ObjectId('62c4466e3ea7d352d8093c8c'), "query"=>"vv"}], "ordered"=>true}
+MONGODB | localhost:27017 | helpjuice_development.insert | SUCCEEDED | 0.000634721s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-05 17:10:54 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}}
+MONGODB | localhost:27017 | helpjuice_development.find | SUCCEEDED | 0.000488044s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.3ms)
+
+
+Started GET "/knowledgebase/clear" for 127.0.0.1 at 2022-07-05 17:10:57 +0300
+Processing by KnowledgebasesController#clear as HTML
+MONGODB | localhost:27017 | helpjuice_development.delete | STARTED | {"delete"=>"knowledge_bases", "deletes"=>[{"q"=>{}, "limit"=>0}], "ordered"=>true}
+MONGODB | localhost:27017 | helpjuice_development.delete | SUCCEEDED | 0.000979333s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-05 17:10:57 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}}
+MONGODB | localhost:27017 | helpjuice_development.find | SUCCEEDED | 0.0005111390000000001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 18.5ms)
+
+
