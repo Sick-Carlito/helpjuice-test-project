@@ -8354,3 +8354,1874 @@ MONGODB | localhost:27017 req:376 | helpjuice_development.find | SUCCEEDED | 0.0
 Completed 200 OK in 37ms (Views: 25.0ms)
 
 
+Started POST "/articles/search" for ::1 at 2022-07-05 21:06:12 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"hLWwG7otVnLUD941chMEYJJ2p3FBnU7Dw77Fq9YRHaVmbARLjM5lwDiBfEBSC6hRxb5yUxDx440VAdcmZAn60w==", "search_field"=>"dd"}
+MONGODB | localhost:27017 req:956 conn:1:1 sconn:11 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('62c47d943ea7d3863923f4b6'), "query"=>"dd"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x70279133545820 type=uuid data=0x79c1787307294583...>}}
+MONGODB | localhost:27017 req:956 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for ::1 at 2022-07-05 21:06:12 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:957 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x70279133545820 type=uuid data=0x79c1787307294583...>}}
+MONGODB | localhost:27017 req:957 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 41.9ms)
+
+
+Started GET "/knowledgebase/clear" for ::1 at 2022-07-05 21:06:14 +0300
+Processing by KnowledgebasesController#clear as HTML
+MONGODB | localhost:27017 req:958 conn:1:1 sconn:11 | helpjuice_development.delete | STARTED | {"delete"=>"knowledge_bases", "ordered"=>true, "deletes"=>[{"q"=>{}, "limit"=>0}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x70279133545820 type=uuid data=0x79c1787307294583...>}}
+MONGODB | localhost:27017 req:958 | helpjuice_development.delete | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for ::1 at 2022-07-05 21:06:15 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:959 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x70279133545820 type=uuid data=0x79c1787307294583...>}}
+MONGODB | localhost:27017 req:959 | helpjuice_development.find | SUCCEEDED | 0.000s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 20.2ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-07-05 21:45:04 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"vmVi1iqNdLx6xyOdr9gIDqgnVCSyRrka0BcjlXhtTn9cvNaGHG5HDpZJgeiPwKQ//++BBuMqFFQGqDEYynWpCQ==", "search_field"=>"hi"}
+MONGODB | localhost:27017 req:1193 conn:1:1 sconn:11 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('62c486b03ea7d3863923f4b7'), "query"=>"hi"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x70279054161180 type=uuid data=0x4cfc207d3f7540bd...>}}
+MONGODB | localhost:27017 req:1193 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms
+
+
+Started GET "/" for ::1 at 2022-07-05 21:45:04 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:1194 conn:1:1 sconn:11 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x70279054161180 type=uuid data=0x4cfc207d3f7540bd...>}}
+MONGODB | localhost:27017 req:1194 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 37.4ms)
+
+
+Started GET "/" for ::1 at 2022-12-04 07:53:38 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 29.99 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 61044ms
+
+
+  
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+  
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+app/controllers/articles_controller.rb:4:in `group_by'
+app/controllers/articles_controller.rb:4:in `index'
+MONGODB | There was a change in the members of the 'Unknown' topology.
+  Rendering /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.5ms)
+  Rendering /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/carlito94/.rbenv/versions/2.6.9/lib/ruby/gems/2.6.0/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.4ms)
+Started GET "/" for ::1 at 2022-12-04 11:28:38 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 11:28:59 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 65505ms
+
+
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+  
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+  
+app/controllers/articles_controller.rb:4:in `group_by'
+app/controllers/articles_controller.rb:4:in `index'
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.1ms)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 60002ms
+
+
+  
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+  
+app/controllers/articles_controller.rb:4:in `group_by'
+app/controllers/articles_controller.rb:4:in `index'
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.3ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.8ms)
+Started GET "/" for ::1 at 2022-12-04 12:21:27 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 12:43:51 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 12:45:44 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 12:46:06 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 61028ms
+
+
+  
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+  
+app/controllers/articles_controller.rb:4:in `group_by'
+app/controllers/articles_controller.rb:4:in `index'
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.8ms)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Completed 500 Internal Server Error in 60005ms
+
+
+  
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]> with timeout=30, LT=0.015):
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+  
+app/controllers/articles_controller.rb:4:in `group_by'
+app/controllers/articles_controller.rb:4:in `index'
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.1ms)
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 12:48:11 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 13:16:33 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Error checking localhost:27017: Mongo::Error::SocketError: Errno::ECONNREFUSED: Connection refused - connect(2) for 127.0.0.1:27017 (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 13:20:26 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:3000 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:3000] servers=[#<Server address=localhost:3000 UNKNOWN>]>
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 13:31:44 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:3000 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:3000] servers=[#<Server address=localhost:3000 UNKNOWN>]>
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Failed to handshake with localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Error checking localhost:3000: Mongo::Error::MaxMessageSize: Message exceeds allowed max message size. The max is 50331648.
+MONGODB | Server description for localhost:3000 changed from 'unknown' to 'unknown'.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+Started GET "/" for ::1 at 2022-12-04 14:04:28 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | Topology type 'unknown' initializing.
+MONGODB | There was a change in the members of the 'Unknown' topology.
+MONGODB | Server localhost:27017 initializing.
+MONGODB | Waiting for up to 30.00 seconds for servers to be scanned: #<Cluster topology=Unknown[localhost:27017] servers=[#<Server address=localhost:27017 UNKNOWN>]>
+MONGODB | Server description for localhost:27017 changed from 'unknown' to 'standalone'.
+MONGODB | Topology type 'Unknown' changed to type 'Single'.
+MONGODB | localhost:27017 req:6 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:6 | helpjuice_development.find | SUCCEEDED | 0.060s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 7714ms (Views: 7568.0ms)
+
+
+MONGODB | Server description for localhost:27017 changed from 'standalone' to 'standalone' [awaited].
+MONGODB | There was a change in the members of the 'Single' topology.
+Started POST "/articles/search" for ::1 at 2022-12-04 14:04:54 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"zhk9tG2GCzQgw0XU/4WbP57Jx/IXxzv/tPmriOVArhwfnkAFdL8BJ1sn3rwm+1yR516la/E51tCxHsB2b/EFrQ==", "search_field"=>"hi"}
+MONGODB | localhost:27017 req:9 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c7ed63ea7d323e2ffea55'), "query"=>"hi"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:9 | helpjuice_development.insert | SUCCEEDED | 0.245s
+Completed 500 Internal Server Error in 694ms
+
+
+  
+NameError (undefined local variable or method `root_paths' for #<ArticlesController:0x00007fce300129c0>
+Did you mean?  root_path):
+  
+app/controllers/articles_controller.rb:9:in `search'
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.5ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (340.6ms)
+Started POST "/articles/search" for ::1 at 2022-12-04 14:05:14 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"zhk9tG2GCzQgw0XU/4WbP57Jx/IXxzv/tPmriOVArhwfnkAFdL8BJ1sn3rwm+1yR516la/E51tCxHsB2b/EFrQ==", "search_field"=>"hi"}
+MONGODB | localhost:27017 req:12 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c7eea3ea7d323e2ffea56'), "query"=>"hi"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:12 | helpjuice_development.insert | SUCCEEDED | 0.059s
+Completed 500 Internal Server Error in 452ms
+
+
+  
+NameError (undefined local variable or method `root_paths' for #<ArticlesController:0x00007fce4cce84d0>
+Did you mean?  root_path):
+  
+app/controllers/articles_controller.rb:9:in `search'
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (40.0ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.2ms)
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (460.4ms)
+MONGODB | Error running awaited hello on localhost:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 20 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+Started POST "/articles/search" for ::1 at 2022-12-04 14:07:37 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"zhk9tG2GCzQgw0XU/4WbP57Jx/IXxzv/tPmriOVArhwfnkAFdL8BJ1sn3rwm+1yR516la/E51tCxHsB2b/EFrQ==", "search_field"=>"carl"}
+MONGODB | localhost:27017 req:26 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c7f793ea7d323e2ffea57'), "query"=>"carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:26 | helpjuice_development.insert | SUCCEEDED | 0.075s
+Completed 500 Internal Server Error in 404ms
+
+
+  
+NameError (undefined local variable or method `root_paths' for #<ArticlesController:0x00007fce3e031808>
+Did you mean?  root_path):
+  
+app/controllers/articles_controller.rb:9:in `search'
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /home/carlito94/.rvm/gems/ruby-2.6.3/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (216.0ms)
+Started GET "/" for ::1 at 2022-12-04 14:08:28 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:32 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:32 | helpjuice_development.find | SUCCEEDED | 0.157s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 409ms (Views: 198.7ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:08:43 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"23GTzRx9w5q/4UwPzyEUmjyKNVPCTx7Vzc5grQCFkw8K9u58BUTJicQF12cWX9M0RR1XyiSx8/rIKQtTijQ4vg==", "search_field"=>"hi there"}
+MONGODB | localhost:27017 req:34 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c7fbb3ea7d323e2ffea58'), "query"=>"hi there"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:34 | helpjuice_development.insert | SUCCEEDED | 0.217s
+Redirected to http://localhost:3000/
+Completed 302 Found in 235ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:08:44 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:35 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:35 | helpjuice_development.find | SUCCEEDED | 0.169s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 281ms (Views: 90.4ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:09:11 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"6orBtlp762kIMNuZrL80+ucrK+XLQ3IkNZfBdXxDu4c7DbwHQ0LhenPUQPF1wfNUnrxJfC29nwswcKqL9vIQNg==", "search_field"=>"hi there carl"}
+MONGODB | localhost:27017 req:39 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c7fd73ea7d323e2ffea59'), "query"=>"hi there carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:39 | helpjuice_development.insert | SUCCEEDED | 0.107s
+Redirected to http://localhost:3000/
+Completed 302 Found in 125ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:09:12 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:40 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:40 | helpjuice_development.find | SUCCEEDED | 0.036s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 161ms (Views: 119.9ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:09:34 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"kKfodog2sNb3Iy3GaARogHMD4MNpCsQtEZ74U3HLNdhBIJXHkQ+6xYzHtq6xeq8uCpSCWo/0KQIUeZOt+3qeaQ==", "search_field"=>"carl"}
+MONGODB | localhost:27017 req:43 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c7fee3ea7d323e2ffea5a'), "query"=>"carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:43 | helpjuice_development.insert | SUCCEEDED | 0.093s
+Redirected to http://localhost:3000/
+Completed 302 Found in 112ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:09:35 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:44 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:44 | helpjuice_development.find | SUCCEEDED | 0.032s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 159ms (Views: 119.9ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:10:23 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"CxjcA2knBKWBDE9rRD/xK79gxqXO8YVQMtyaUCjr4kvan6GycB4Otvro1AOdQTaFxvekPCgPaH83O/GuolpJ+g==", "search_field"=>"carl"}
+MONGODB | localhost:27017 req:50 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c801f3ea7d323e2ffea5b'), "query"=>"carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:50 | helpjuice_development.insert | SUCCEEDED | 0.078s
+Redirected to http://localhost:3000/
+Completed 302 Found in 104ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:10:23 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:51 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:51 | helpjuice_development.find | SUCCEEDED | 0.036s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 155ms (Views: 113.1ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:10:33 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"J4auJGhwBzvvgEIL9S8U2vRY9N2jsYU27T7NKBzvqwn2AdOVcUkNKJRk2WMsUdN0jc+WREVPaBno2abWll4AuA==", "search_field"=>"hi there"}
+MONGODB | localhost:27017 req:53 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80293ea7d323e2ffea5c'), "query"=>"hi there"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:53 | helpjuice_development.insert | SUCCEEDED | 0.122s
+Redirected to http://localhost:3000/
+Completed 302 Found in 164ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:10:34 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:54 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:54 | helpjuice_development.find | SUCCEEDED | 0.046s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 192ms (Views: 137.7ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:10:57 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"C334nKe9BxDFb0OeUgOK8NshSnkZbxOr8Q9mChbA4GHa+oUtvoQNA76L2PaLfU1eorYo4P+R/oT06A30nHFL0A==", "search_field"=>"hi there"}
+MONGODB | localhost:27017 req:58 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80413ea7d323e2ffea5d'), "query"=>"hi there"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:58 | helpjuice_development.insert | SUCCEEDED | 0.056s
+Redirected to http://localhost:3000/
+Completed 302 Found in 77ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:10:58 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:59 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:59 | helpjuice_development.find | SUCCEEDED | 0.051s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 155ms (Views: 96.8ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:11:18 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"vr+F2r6MnJLKsUgKJet379U2WJLJuHvmy7e6snMgabxvOPhrp7WWgbFV02L8lbBBrKE6Cy9GlsnOUNFM+ZHCDQ==", "search_field"=>"hi"}
+MONGODB | localhost:27017 req:62 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80563ea7d323e2ffea5e'), "query"=>"hi"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:62 | helpjuice_development.insert | SUCCEEDED | 0.078s
+Redirected to http://localhost:3000/
+Completed 302 Found in 115ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:11:18 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:63 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:63 | helpjuice_development.find | SUCCEEDED | 0.043s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 130ms (Views: 79.9ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:11:41 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"xL7f3i3HdlkI2rDPZm0MHrVgIbWyKMiKfiZqK4AUUgcVOaJvNP58SnM+K6e/E8uwzPdDLFTWJaV7wQHVCqX5tg==", "search_field"=>"hi carl"}
+MONGODB | localhost:27017 req:66 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c806d3ea7d323e2ffea5f'), "query"=>"hi carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:66 | helpjuice_development.insert | SUCCEEDED | 0.071s
+Redirected to http://localhost:3000/
+Completed 302 Found in 92ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:11:41 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:67 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:67 | helpjuice_development.find | SUCCEEDED | 0.039s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 128ms (Views: 83.0ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:12:03 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"WTEk1wzCjvHha6Z6TAthnfPSN9tDXeO4wew7smQpAGeItllmFfuE4pqPPRKVdaYzikVVQqWjDpfEC1BM7pir1g==", "search_field"=>"hi carl"}
+MONGODB | localhost:27017 req:70 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80833ea7d323e2ffea60'), "query"=>"hi carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:70 | helpjuice_development.insert | SUCCEEDED | 0.130s
+Redirected to http://localhost:3000/
+Completed 302 Found in 153ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:12:04 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:71 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:71 | helpjuice_development.find | SUCCEEDED | 0.048s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 162ms (Views: 101.9ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:12:23 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"N1bOUcsezqcPc6THWryczgVtmxXJSt5/gM4w8mihx8zm0bPg0ifEtHSXP6+DwltgfPr5jC+0M1CFKVsM4hBsfQ==", "search_field"=>"hi carl bond"}
+MONGODB | localhost:27017 req:74 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80973ea7d323e2ffea61'), "query"=>"hi carl bond"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:74 | helpjuice_development.insert | SUCCEEDED | 0.099s
+Redirected to http://localhost:3000/
+Completed 302 Found in 123ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:12:23 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:75 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:75 | helpjuice_development.find | SUCCEEDED | 0.036s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 132ms (Views: 90.4ms)
+
+
+Started GET "/knowledgebase/clear" for ::1 at 2022-12-04 14:12:36 +0300
+Processing by KnowledgebasesController#clear as HTML
+MONGODB | localhost:27017 req:77 conn:1:1 sconn:10 | helpjuice_development.delete | STARTED | {"delete"=>"knowledge_bases", "ordered"=>true, "deletes"=>[{"q"=>{}, "limit"=>0}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:77 | helpjuice_development.delete | SUCCEEDED | 0.083s
+Redirected to http://localhost:3000/
+Completed 302 Found in 122ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:12:37 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:78 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:78 | helpjuice_development.find | SUCCEEDED | 0.010s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 299ms (Views: 256.4ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:12:44 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"/e3e4Lm5jcnVrHwrmafjnKTMRcfISOWSCSAqJtTb/BUsaqNRoICH2q5I50NA2SQy3VsnXi62CL0Mx0HYXmpXpA==", "search_field"=>"carl"}
+MONGODB | localhost:27017 req:80 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80ac3ea7d323e2ffea62'), "query"=>"carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:80 | helpjuice_development.insert | SUCCEEDED | 0.065s
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:12:44 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:81 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:81 | helpjuice_development.find | SUCCEEDED | 0.037s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 106ms (Views: 64.1ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:12:52 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"cqgm8WrqhNThbVJyB44Y0VC5sRfMDlB0EE7P48ObOWmjL1tAc9OOx5qJyRre8N9/KS7TjirwvVsVqaQdSSqS2A==", "search_field"=>"Carl"}
+MONGODB | localhost:27017 req:83 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80b43ea7d323e2ffea63'), "query"=>"Carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:83 | helpjuice_development.insert | SUCCEEDED | 0.109s
+Redirected to http://localhost:3000/
+Completed 302 Found in 127ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:12:52 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:84 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:84 | helpjuice_development.find | SUCCEEDED | 0.052s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 168ms (Views: 108.9ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:13:10 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"U0+1LNvDTZnkxQS42Rf9JcK0JKJFiUDKATms2Yuw6h6CyMidwvpHip8hn9AAaTqLuyNGO6N3reUE3scnAQFBrw==", "search_field"=>"carl  bond"}
+MONGODB | localhost:27017 req:87 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80c63ea7d323e2ffea64'), "query"=>"carl  bond"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:87 | helpjuice_development.insert | SUCCEEDED | 0.083s
+Redirected to http://localhost:3000/
+Completed 302 Found in 106ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:13:10 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:88 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:88 | helpjuice_development.find | SUCCEEDED | 0.036s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 220ms (Views: 172.1ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:13:45 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"uau8WVj8zqSW2PFKBID20OYwV4esUIC2YTOebYFsPXRoLMHoQcXEt+08aiLd/jF+n6c1HkqubZlk1PWTC92WxQ==", "search_field"=>"carl bond"}
+MONGODB | localhost:27017 req:92 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80e93ea7d323e2ffea65'), "query"=>"carl bond"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:92 | helpjuice_development.insert | SUCCEEDED | 0.044s
+Redirected to http://localhost:3000/
+Completed 302 Found in 54ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:13:45 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:93 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:93 | helpjuice_development.find | SUCCEEDED | 0.033s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 194ms (Views: 152.6ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:14:05 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"rXlMNnlQXXo8XEFhImT5ADJmOvxO+IZag2Wg95q2IeV8/jGHYGlXaUe42gn7Gj6uS/FYZagGa3WGgssJEAeKVA==", "search_field"=>"carl bond"}
+MONGODB | localhost:27017 req:96 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c80fd3ea7d323e2ffea66'), "query"=>"carl bond"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:96 | helpjuice_development.insert | SUCCEEDED | 0.016s
+Redirected to http://localhost:3000/
+Completed 302 Found in 27ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:14:05 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:97 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:97 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 107ms (Views: 101.6ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:14:14 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"H7AW4elQPiF3mzPPFrA67yg7FtBC2xU5P59abLi7QRDON2tQ8Gk0Mgx/qKfPzv1BUax0SaQl+BY6eDGSMgrqoQ==", "search_field"=>"carl bond "}
+MONGODB | localhost:27017 req:99 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c81063ea7d323e2ffea67'), "query"=>"carl bond "}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:99 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:14:14 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:100 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:100 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 69ms (Views: 63.9ms)
+
+
+Started GET "/knowledgebase/clear" for ::1 at 2022-12-04 14:14:20 +0300
+Processing by KnowledgebasesController#clear as HTML
+MONGODB | localhost:27017 req:102 conn:1:1 sconn:10 | helpjuice_development.delete | STARTED | {"delete"=>"knowledge_bases", "ordered"=>true, "deletes"=>[{"q"=>{}, "limit"=>0}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:102 | helpjuice_development.delete | SUCCEEDED | 0.014s
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:14:21 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:103 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:103 | helpjuice_development.find | SUCCEEDED | 0.038s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 159ms (Views: 109.5ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:14:26 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"bBJKAxm5VRXKRJp5QuFlJv48LRh+U91mhvl/wFWi0ri9lTeyAIBfBrGgARGbn6KIh6tPgZitMEmDHhQ+3xN5CQ==", "search_field"=>"carl"}
+MONGODB | localhost:27017 req:104 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c81123ea7d323e2ffea68'), "query"=>"carl"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:104 | helpjuice_development.insert | SUCCEEDED | 0.002s
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:14:26 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:105 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:105 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 84ms (Views: 79.6ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:14:33 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"b99QkgCSeOmnBiBoem6iLjaMdupdamLa1uuMomHINoO+WC0jGaty+tziuwCjEGWATxsUc7uUj/XTDOdc63mdMg==", "search_field"=>"carl bond"}
+MONGODB | localhost:27017 req:107 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c81193ea7d323e2ffea69'), "query"=>"carl bond"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:107 | helpjuice_development.insert | SUCCEEDED | 0.002s
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:14:33 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:108 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:108 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 42.4ms)
+
+
+Started POST "/articles/search" for ::1 at 2022-12-04 14:14:41 +0300
+Processing by ArticlesController#search as HTML
+  Parameters: {"authenticity_token"=>"MzuHSja/8sNeTOn1PDhhyF/h9rLVXhckroJK//fFE2HivPr7L4b40CWocp3lRqZmJnaUKzOg+gurZSEBfXS40A==", "search_field"=>"carl bond"}
+MONGODB | localhost:27017 req:110 conn:1:1 sconn:10 | helpjuice_development.insert | STARTED | {"insert"=>"knowledge_bases", "ordered"=>true, "documents"=>[{"_id"=>BSON::ObjectId('638c81213ea7d323e2ffea6a'), "query"=>"carl bond"}], "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:110 | helpjuice_development.insert | SUCCEEDED | 0.001s
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for ::1 at 2022-12-04 14:14:41 +0300
+Processing by ArticlesController#index as HTML
+MONGODB | localhost:27017 req:111 conn:1:1 sconn:10 | helpjuice_development.find | STARTED | {"find"=>"knowledge_bases", "filter"=>{}, "$db"=>"helpjuice_development", "lsid"=>{"id"=><BSON::Binary:0x12980 type=uuid data=0x4f4f8efbfcca4b6e...>}}
+MONGODB | localhost:27017 req:111 | helpjuice_development.find | SUCCEEDED | 0.001s
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 101ms (Views: 89.3ms)
+
+
+MONGODB | Error running awaited hello on localhost:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 20 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
+MONGODB | Error running awaited hello on localhost:27017: Mongo::Error::SocketTimeoutError: Errno::ETIMEDOUT: Connection timed out - Took more than 20 seconds to receive data (select call timed out) (for 127.0.0.1:27017 (no TLS)) (on localhost:27017)
